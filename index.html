@@ -1,72 +1,120 @@
 <!DOCTYPE html>
 <hmtl lang="en">
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google clone</title>
-    <link href="styles/style.css" rel="stylesheet" />
-  </head>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Google clone</title>
+      <link href="styles/style.css" rel="stylesheet" />
+    </head>
 
-  <body>
-    <div class="page">
-      <div class="page_container">
-        <!-- Navigation-->
-        <nav class="nav">
-          <ul class="left-align">
-            <li class="nav-item">
-              <a class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Store</a>
-            </li>
-          </ul>
-          <ul class="right-align">
-            <li class="nav-item"><a class="nav-link">Gmail</a></li>
-            <li class="nav-item"><a class="nav-link">Images</a></li>
-            <li class="nav-item"><a>Google Apps</a></li>
-            <li class="nav-item"><button>Sign-In</button></li>
-          </ul>
-        </nav>
+    <body>
+      <div class="page">
+        <div class="page_container">
+          <!-- Navigation-->
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Store</a>
+              </li>
+              <li class="nav-item" style="float: right">
+                <button>Sign-In</button>
+              </li>
+              <li class="nav-item" style="float: right">
+                <a>Google Apps</a>
+              </li>
+              <li class="nav-item" style="float: right">
+                <a class="nav-link">Images</a>
+              </li>
+              <li class="nav-item" style="float: right">
+                <a class="nav-link">Gmail</a>
+              </li>
+            </ul>
+          </nav>
 
-        <!-- Main -->
-        <main class="main">
-          <div class="main-hero">
-            <img src="/images/googlelogo.png" alt="Google logo" />
-          </div>
-          
-          <div class="main-input">
-            <form class="main-form"></form>
-            <div class="form-group"> 
-              <div class="form-logo-search"></div>
-              <div class="form-input"><input></input></div>
-              <div class="form-logo-mic"></div>
+          <!-- Main -->
+          <main class="main">
+            <div class="main-hero">
+              <img src="/images/googlelogo.png" alt="Google logo" />
             </div>
-          </div>
-          <div class="main-submit">
-            <button class="button">Google Search</button>
-            <button class="button">I'm Feeling Lucky</button>
-          </div>
-                                
-        </main>
 
-        <!-- Footer-->
-        <footer class="footer">
-          <div class="footer-item">Australia</div>
-          <div>
-            <ul class="footer-left">            
-                <li class="footer-item"><a class="footer-link">Advertising</a></li>
+            <div class="main-input">
+              <form class="main-form">
+                <div class="form-group">
+                  <div class="form-logo-search">
+                    <svg
+                      focusable="false"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="form-input">
+                    <input id="search" type="text" name="search" />
+                  </div>
+                  <div class="form-logo-mic">
+                    <svg
+                      class="HPVvwb"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"
+                        fill="#4285f4"
+                      ></path>
+                      <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
+                      <path
+                        d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"
+                        fill="#f4b400"
+                      ></path>
+                      <path
+                        d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"
+                        fill="#ea4335"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="main-submit">
+              <button class="button" type="submit">Google Search</button>
+              <button class="button" type="submit">I'm Feeling Lucky</button>
+            </div>
+          </main>
+
+          <!-- Footer-->
+          <footer class="footer">
+            <div class="footer-first">Australia</div>
+            <div class="footer-second">
+              <ul class="footer-left">
+                <li class="footer-item">
+                  <a class="footer-link">Advertising</a>
+                </li>
                 <li class="footer-item"><a class="footer-link">Business</a></li>
-                <li class="footer-item"><a class="footer-link">How Search works</a></li>        
-            </ul>
-            <ul class="footer-right">
-                <li class="footer-item"><a class="footer-link">Privacy</a></li>
-                <li class="footer-item"><a class="footer-link">Terms</a></li>
-                <li class="footer-item"><a class="footer-link">Settings</a></li>             
-            </ul>
-          </div>
-        </footer>
+                <li class="footer-item">
+                  <a class="footer-link">How Search works</a>
+                </li>
+                <li class="footer-item" style="float: right">
+                  <a class="footer-link">Settings</a>
+                </li>
+                <li class="footer-item" style="float: right">
+                  <a class="footer-link">Terms</a>
+                </li>
+                <li class="footer-item" style="float: right">
+                  <a class="footer-link">Privacy</a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
       </div>
-    </div>
-  </body>
-</html>
+    </body>
+  </html>
+</hmtl>
